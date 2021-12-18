@@ -65,11 +65,11 @@
 		<td>${u.getNow()}</td>
 		<td>${u.getKind()}</td>
 		<td>${u.getRegdate()}</td>
-		<td>
-			<button type="button" onclick="location.href='joinform/${u.getSeq()}'" class="btn btn-outline-warning">Join</button>
-			<button type="button" onclick="location.href='editform/${u.getSeq()}'" class="btn btn-outline-primary">Edit</button>
-			<button type="button" onclick="javascript:delete_ok('${u.getSeq()}')" class="btn btn-outline-danger">Delete</button>
-		</td>
+	<td>
+		<button type="button" onclick="location.href='joinform/${u.getSeq()}'" class="btn btn-outline-warning">Join</button>
+		<button type="button" onclick="location.href='editform/${u.getSeq()}'" class="btn btn-outline-primary">Edit</button>
+		<button type="button" onclick="location.href='deleteok${u.getSeq()}'" class="btn btn-outline-danger">Delete</button>
+	</td>
 	</tr>
 </c:forEach>
 </table>
